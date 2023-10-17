@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title th:text="${Headboard}"></title>
+<link rel="icon" type="image/x-icon" th:href="@{/img/logo.png}" />
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+
+</head>
+<body>
+	<div id="particles-js"></div>
+	<header class="contenedor header">
+		<nav class="barra-navegacion">
+			<ul>
+
+				<li><a th:href="@{/customer/list}">Customers</a></li>
+				<li>
+					<div class="logotipo">
+						<img th:src="@{/img/logo.png}" alt="Logotipo" style="height:200px "/>
+					</div>
+				</li>
+				<li><a th:href="@{/company/list}">Companies</a></li>
+
+			</ul>
+		</nav>
+
+		<div class="contenido-descripcion">
+			<div>
+				<h1 class="titulo">
+					<span>BBDD</span> <span>Energy</span>
+				</h1>
+				<article class="descripcion">
+					<p>Choose between the customer database or the company database.</p>
+					<section class="main">
+						<section class="box">
+							<a th:href="@{/customer/list}"><img
+								th:src="@{/img/customers.png}" class="cuadrado"></a>
+							<h2>Customers</h2>
+
+						</section>
+						<section class="box">
+							<a th:href="@{/company/list}"><img
+								th:src="@{/img/companies.jpg}" class="cuadrado"></a>
+							<h2>Companies</h2>
+
+						</section>
+					</section>
+
+				</article>
+			</div>
+		</div>
+	</header>
+	<!-- Título y descripción -->
+
+
+
+
+	<script src="js/particles.min.js"></script>
+	<script src="js/particlesjs-config.json"></script>
+
+</body>
+</html>
